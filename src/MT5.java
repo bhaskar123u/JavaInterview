@@ -25,3 +25,7 @@ class TaskBeta implements Runnable{
 //         return counter.get();
 //     }
 // }
+
+// output
+// Thread main is invoking run()
+// Thread Thread-0 is invoking run()

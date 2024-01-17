@@ -71,3 +71,6 @@ public class ConcurrentAPICalls {
     return responseBody.substring(indexOfFirstName+14, indexOfLastName-1);    
   }
 }
+
+// output
+// Combined Response: George, Janet, Emma

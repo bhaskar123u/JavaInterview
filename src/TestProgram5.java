@@ -5,21 +5,33 @@ public class TestProgram5 {
         objA.fn();
     }
 }
-class AmI{
+
+class AmI {
     int a;
     static double b;
+
     // Inner class
-    class B{
+    class B {
         int c;
+
         //static int d; // In a inner class, which exist only on object of outer class, we cannot have static fields
-        void print(){
-            System.out.println("a "+a);
-            System.out.println("b "+b);
-            System.out.println("c "+c);
+        void print() {
+            System.out.println("a " + a);
+            System.out.println("b " + b);
+            System.out.println("c " + c);
         }
     }
+
     B objB = new B();
-    void fn(){
+
+    void fn() {
         objB.print();
     }
 }
+
+// output
+/*
+ * a 0
+ * b 0.0
+ * c 0
+ */

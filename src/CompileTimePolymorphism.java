@@ -28,3 +28,12 @@ class CTP{
         return "Hello";
     }
 }
+
+// output
+/*
+ * void print() called
+ * int print() called
+ * 1
+ * String print() called
+ * Hello
+ */

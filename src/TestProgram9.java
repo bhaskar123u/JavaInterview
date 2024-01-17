@@ -9,12 +9,17 @@ public class TestProgram9 {
 interface TaskZ{
     public void hello();
 }
-class TaskB implements TaskZ{
+
+class TaskB implements TaskZ {
     @Override
     public void hello() {
         System.out.println("hello");
     }
-    public void bye(){
+
+    public void bye() {
         System.out.println("bye");
     }
 }
+
+// output
+// bye

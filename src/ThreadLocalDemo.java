@@ -24,3 +24,17 @@ public class ThreadLocalDemo {
         executor.shutdown();
     }
 }
+
+// output
+/*
+ * Incrementing value by 1
+ * Incrementing value by 1
+ * Incrementing value by 1
+ * Incrementing value by 1
+ * Incrementing value by 1
+ * pool-1-thread-5 has count as 1
+ * pool-1-thread-2 has count as 1
+ * pool-1-thread-3 has count as 1
+ * pool-1-thread-1 has count as 1
+ * pool-1-thread-4 has count as 1
+ */

@@ -14,3 +14,6 @@ class ChildException extends Exceptionex{
         System.out.println("Inside ChildException");
     }
 }
+
+// output
+// Inside ChildException

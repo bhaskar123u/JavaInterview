@@ -24,3 +24,8 @@ class Child extends Parent{
         return 5;
     }
 }
+
+// output
+// 2
+// 5
+// 3

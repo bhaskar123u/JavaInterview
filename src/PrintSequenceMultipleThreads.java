@@ -59,3 +59,17 @@ class TaskFactory {
         }
     }
 }
+
+//output
+/*
+ * t0 printing 0
+ * t1 printing 1
+ * t0 printing 0
+ * t1 printing 1
+ * t0 printing 0
+ * t1 printing 1
+ * t0 printing 0
+ * t1 printing 1
+ * t0 printing 0
+ * t1 printing 1
+ */

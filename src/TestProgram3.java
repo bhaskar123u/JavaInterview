@@ -13,3 +13,10 @@ public class TestProgram3 {
         System.out.println("hello again()");
     }
 }
+
+// output
+/*
+ * TestProgram3@2c7b84de created in main()
+ * TestProgram3@2c7b84de can be accessed in hello()
+ * hello again()
+ */

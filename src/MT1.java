@@ -32,3 +32,19 @@ class Demo1 implements Runnable{
 }
 class Demo2 extends Thread{
 }
+ // output
+ /*
+  * Creating thread using Thread class
+  * Creating thread using Runnable interface
+  * Hello from thread 3
+  * Hello from thread 0
+  * Hello from thread 1
+  * Hello from thread 2
+  * Hello from thread 4
+  * Creating thread using class which doesn't override run()
+  * Hello from thread 4
+  * Hello from thread 0
+  * Hello from thread 2
+  * Hello from thread 1
+  * Hello from thread 3
+  */

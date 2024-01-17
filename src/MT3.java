@@ -56,3 +56,19 @@ class Hello{
  * We can see here that the same class is accessed by 2 threads at a time, this is because the lock is object based
  * If this would have been a static synchronized function/synchronized(Hello.class) the lock would be on whole class resulting in 1 thread access at a time
  */
+
+// output
+/*
+ * In sayHello() with thread : t3
+ * In sayHello() with thread : t1
+ * thread : t3 i : 0
+ * thread : t1 i : 0
+ * thread : t3 i : 1
+ * thread : t1 i : 1
+ * In sayHello() with thread : t2
+ * thread : t2 i : 0
+ * In sayHello() with thread : t4
+ * thread : t4 i : 0
+ * thread : t2 i : 1
+ * thread : t4 i : 1
+ */

@@ -20,3 +20,13 @@ public class TestProgram2 {
             System.out.println(e.getName() + " " + e.getId());
     }
 }
+
+// output
+/*
+ * Madan Kumar 34
+ * Saket Kumar 37
+ * ---------------------
+ * Bhaskar Sharan 38
+ * Saket Kumar 34
+ * Saket Kumar 37
+ */

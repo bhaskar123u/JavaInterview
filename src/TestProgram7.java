@@ -14,3 +14,6 @@ public class TestProgram7 {
         return "good";
     }
 }
+
+// output
+// dogood: dogood

@@ -34,3 +34,11 @@ class Beeper implements Runnable{
         System.out.println("Beep");
     }
 }
+
+// output
+/*
+ * Beep
+ * Beep
+ * Beep
+ * Beep
+ */

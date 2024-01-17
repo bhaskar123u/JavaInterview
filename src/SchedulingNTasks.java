@@ -15,3 +15,17 @@ class RepeatitiveTask implements Runnable{
         System.out.println("Thread : " + Thread.currentThread().getName() + " printing Hello User");
     }
 }
+ // output
+ /*
+  * Thread : pool-1-thread-1 printing Hello User
+  * Thread : pool-1-thread-2 printing Hello User
+  * Thread : pool-1-thread-1 printing Hello User
+  * Thread : pool-1-thread-2 printing Hello User
+  * Thread : pool-1-thread-1 printing Hello User
+  * Thread : pool-1-thread-2 printing Hello User
+  * Thread : pool-1-thread-1 printing Hello User
+  * Thread : pool-1-thread-2 printing Hello User
+  .
+  .
+  .
+  */

@@ -45,3 +45,10 @@ public class NthHighestSalaryDemo {
                 .get(num - 1);
     }
 }
+
+// output
+/*
+ * james=1400
+ * tom=1300
+ * 1500=[micael]
+ */

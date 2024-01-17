@@ -69,3 +69,12 @@ public class CallableExample {
         });
     }
 }
+
+// output
+/*
+ * null :schedule failed
+ * Hi
+ * Hi :scheduled successfully
+ * Hello
+ * Hello :scheduled successfully
+ */

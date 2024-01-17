@@ -11,13 +11,15 @@ public class CompletableFutureExample {
         System.out.println(res1.get());
         Future<String> res2 = es.submit(new TaskNoDelay());
         System.out.println(res2.get());
+
+        es.shutdown();
     }
 }
 class TaskDelay implements Callable<String>{
     @Override
     public String call() {
         try {
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -32,3 +34,12 @@ class TaskNoDelay implements Callable<String>{
         return "InstantHello";
     }
 }
+
+// output after 3 sec
+
+/*
+ * Thread : pool-1-thread-1 in TaskDelay call()
+ * HelloAfter5Seconds
+ * Thread : pool-1-thread-1 in TaskNoDelay call()
+ * InstantHello
+ */

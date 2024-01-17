@@ -45,3 +45,9 @@ class Mobile{
         return "Mobile [name=" + name + ", price=" + price + "]";
     }
 }
+
+// output
+/*
+ * 15:15
+ * Mobile [name=1+, price=3000]
+ */

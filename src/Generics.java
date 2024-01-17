@@ -31,3 +31,6 @@ class Fish extends WaterAnimal{
         System.out.println("I am a fish");
     }
 }
+ // output
+ // class Fish
+ // class Dog

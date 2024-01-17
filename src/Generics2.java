@@ -26,3 +26,10 @@ class Student2 {
         return "I'm a student";
     }
 }
+ // output
+ /*
+  * I'm a student
+  * I'm a engg student
+  * I'm a engg student
+  * I'm a engg student
+  */

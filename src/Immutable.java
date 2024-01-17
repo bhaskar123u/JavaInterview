@@ -60,3 +60,6 @@ class Address{
         return "Address [city=" + city + ", state=" + state + "]";
     }
 }
+// output
+// UserDetails [name=Bhaskar Sharan, address=Address [city=Patna, state=Bihar]]
+// UserDetails[name=Bhaskar Sharan, address=Address [city=Patna, state=Bihar]]

@@ -21,3 +21,12 @@ class MyComparator implements Comparator<Student>{
         // return o1.getName().compareTo(o2.getName());
     }
 }
+ // output
+ /*
+  * false
+  * 746292446
+  * 1072591677
+  * true
+  * 109757529
+  * 109757529
+  */

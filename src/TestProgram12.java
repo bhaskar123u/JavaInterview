@@ -10,3 +10,6 @@ class TestProgram12Impl extends TestProgram12{
             obj.function1();
     }
 }
+
+// output
+// abstract class's concrete method

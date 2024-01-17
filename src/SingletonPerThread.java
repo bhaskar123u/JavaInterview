@@ -1,11 +1,11 @@
 // https://amiyasahu.github.io/singleton-class-per-thread-in-java.html
 public class SingletonPerThread {
- public static void main(String[] args) {
+  public static void main(String[] args) {
     Thread t1 = new ThreadLocalSingleton();
     t1.start();
     Thread t2 = new ThreadLocalSingleton();
     t2.start();
- }
+  }
 }
 
 class Singleton2 {
@@ -45,3 +45,16 @@ class ThreadLocalSingleton extends Thread {
     System.out.println("Thread " + Thread.currentThread().getName() + " has object with hashcode " + obj.hashCode());
   }
 }
+
+// output
+// 1st implementation
+/*
+ * Thread Thread-0 has object with hashcode 130917158
+ * Thread Thread-1 has object with hashcode 436160393
+ */
+
+ // 2nd implementation
+ /*
+  * Thread Thread-1 has object with hashcode 389589790
+  * Thread Thread-0 has object with hashcode 389589790
+  */

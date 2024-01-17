@@ -117,3 +117,34 @@ class Notebook{
         return true;
     }    
 }
+
+
+// output
+/*
+ * hashcode = 2009633
+ * hashcode = 2009633
+ * false
+ * M2
+ * M2
+ * --------------------------------------
+ * hashcode = 10
+ * hashcode = 10
+ * false
+ * Hi again
+ * Hi again
+ * --------------------------------------
+ * hashcode = 140435067
+ * hashcode = 1450495309
+ * false
+ * Shop No 1
+ * Shop No 2
+ * --------------------------------------
+ * hashcode = -1592379801
+ * hashcode = -1592379801
+ * false
+ * 30
+ * 30
+ * Notebook [numberOfPages=260, price=70.52000000000001]
+ * null
+ * --------------------------------------
+ */

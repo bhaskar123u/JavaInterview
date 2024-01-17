@@ -19,6 +19,25 @@ class Singleton2 {
   }
 }
 
+/*
+class Singleton2 {
+  private static volatile Singleton2 obj = null;
+
+  private Singleton2() {
+  }
+
+  public static Singleton2 getInstance() {
+    if (obj == null) {
+      synchronized (Singleton2.class) {
+        if (obj == null)
+          obj = new Singleton2();
+      }
+    }
+    return obj;
+  }
+}
+*/
+
 class ThreadLocalSingleton extends Thread {
 
   public void run() {

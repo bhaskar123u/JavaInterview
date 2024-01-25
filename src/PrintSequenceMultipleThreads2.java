@@ -1,5 +1,5 @@
 public class PrintSequenceMultipleThreads2 {
-  public static void main(String... args) {
+  public static void main(String... args) throws InterruptedException {
     TaskFactory1 taskFactory1 = new TaskFactory1();
     // one thread one task i.e., t1 - prints 0, t2 - prints 1, t3 - prints 2
     Thread t0 = new Thread(new PrintSequence1(taskFactory1, 0));
@@ -11,6 +11,10 @@ public class PrintSequenceMultipleThreads2 {
     t0.start();
     t1.start();
     t2.start();
+
+    t0.join();
+    t1.join();
+    t2.join();
   }
 }
 

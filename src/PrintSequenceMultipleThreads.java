@@ -1,13 +1,16 @@
 public class PrintSequenceMultipleThreads {
-    public static void main(String... args) {
+    public static void main(String... args) throws InterruptedException {
         TaskFactory taskFactory = new TaskFactory();
         //one thread one task i.e., t1 - prints 0, t2 - prints 1
         Thread t0 = new Thread(new PrintSequence(taskFactory, 0));
-        t0.setName("t0");
+
         Thread t1 = new Thread(new PrintSequence(taskFactory, 1));
-        t1.setName("t1");
-        t1.start();
+        
         t0.start();
+        t1.start();
+
+        t0.join();
+        t1.join();
     }
 }
 class PrintSequence implements Runnable {
@@ -62,14 +65,14 @@ class TaskFactory {
 
 //output
 /*
- * t0 printing 0
- * t1 printing 1
- * t0 printing 0
- * t1 printing 1
- * t0 printing 0
- * t1 printing 1
- * t0 printing 0
- * t1 printing 1
- * t0 printing 0
- * t1 printing 1
+ * Thread-0 printing 0
+ * Thread-1 printing 1
+ * Thread-0 printing 0
+ * Thread-1 printing 1
+ * Thread-0 printing 0
+ * Thread-1 printing 1
+ * Thread-0 printing 0
+ * Thread-1 printing 1
+ * Thread-0 printing 0
+ * Thread-1 printing 1
  */

@@ -27,8 +27,8 @@ class SingletonImpl implements Cloneable{
     public static SingletonImpl getInstance()
     {
         if (obj == null) {
-            // It may happen that 2 threads reaches here, and one of them gains entry @21(let's say t1)
-            // Now when t2 get's access, it assumes that the object @17 is null hence it will again create object
+            // It may happen that 2 threads reaches here, and one of them gains entry @33(let's say t1)
+            // Now when t2 get's access, it assumes that the object @29 is null hence it will again create object
             // To make thread safe
             synchronized (SingletonImpl.class) {
                 // check again as multiple threads

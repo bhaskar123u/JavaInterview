@@ -1,0 +1,3 @@
+public abstract class EmptyAbstractClass{
+  // An abstract class can be empty also, it is used for marking classes might act as a marker or a placeholder to indicate that certain subclasses should follow a specific hierarchy or adhere to a particular design pattern, even if no methods or fields are defined in the abstract class itself
+}

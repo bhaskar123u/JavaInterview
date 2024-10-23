@@ -1,3 +1,10 @@
+/*
+ * class - final
+ * variables - private, final
+ * deep copy in constructor
+ * no setters
+ * getters - don't return actual references, return temporary objects
+ */
 public class Immutable {
     public static void main(String[] args) {
         Address address = new Address("Patna", "Bihar");

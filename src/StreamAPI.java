@@ -1,4 +1,8 @@
 // https://medium.com/javarevisited/21-lambda-and-stream-interview-questions-for-java-programmers-38d7e83b5cac
+/*
+ * 
+Lazy execution in Java Streams refers to the behavior where operations on a stream (particularly non-terminal or intermediate operations) are not executed immediately but are deferred until a terminal operation is invoked. This mechanism allows for optimization and efficient processing of data.
+ */
 
 import java.util.ArrayList;
 import java.util.Collections;

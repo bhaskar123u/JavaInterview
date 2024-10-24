@@ -38,6 +38,15 @@ public class StreamAPI {
             .findFirst()
             .orElse("No Such Employee")
         );
+
+        // Print full name of all employee whose firstName starts with 'A'
+        System.out.print("all employees with firstName starting with A : ");
+        List<String> list =  employeeList.stream()
+            .filter(employee -> employee.getFirstName().startsWith("A"))
+            .map(employee -> employee.getFirstName() + " " + employee.getLastName())
+            .collect(Collectors.toList());
+            list.forEach(i -> System.out.println(i + " "));
+
         // List of all employee who joined in year 2023
         System.out.println("List of all employee who joined in year 2023 : " +
             employeeList.stream()
@@ -47,6 +56,7 @@ public class StreamAPI {
         );
         // Print all emplyee name with 3rd highest salary
         // Check NthHighestSalaryDemo.java
+        
         // Print min salary
         Optional<Integer> minSalary = employeeList.stream()
             .min(Comparator.comparing(employee -> employee.getSalary()))
